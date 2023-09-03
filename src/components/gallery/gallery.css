@@ -1,0 +1,20 @@
+.galleryWrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    gap: 30px;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 2% 2% 2%;
+}
+.galleryWrap .single{
+    width: 100%;
+    cursor: pointer;
+}
+
+.galleryWrap .single img{
+ max-width: 100%;
+}
+
+.galleryWrap .single img:hover{
+    transform: scale(1.08);
+}

@@ -1,0 +1,8 @@
+.table-container table{
+    width: 100%;
+    background-color: aqua;
+}
+
+.table-container table tbody{
+    text-align: center;
+}
