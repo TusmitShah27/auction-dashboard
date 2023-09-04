@@ -6,7 +6,8 @@
 
 }
 .listWrap .playerImage{
-    width: 100%;
+    width: 90%;
+    height: fit-content;
     cursor: pointer;
 }
 .listWrap .playerImage img{

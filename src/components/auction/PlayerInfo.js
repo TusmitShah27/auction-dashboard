@@ -73,22 +73,34 @@ const PlayerInfo = () => {
         setValue(event)         
     }
 
+    function extractDriveFileId(url) {
+        const idMatch = url.match(/id=([^&]+)/);
+        return idMatch ? idMatch[1] : ''; // Return the extracted ID or an empty string if not found
+      }
+
 
   return (
     <div>
     {
         playerDetails.map((player) => (
-
+    
        <div className='listWrap'>
             <div className='playerImage'>
-                <img src='./images/logo.jpeg' alt='My Logo'/>
+            
+            {
+                player.Photo && ( 
+                <img 
+                src={`https://drive.google.com/uc?export=view&id=${extractDriveFileId(player.Photo)}`}
+                alt='drive image'
+                />   
+         )}
+            
             </div>
             <div className='playerInformation'>
                     <h2>Player Information</h2>
                     <div className='playerInformation-display'>
                    
-           
-
+        
                         <table align='center' border="2px" width="100%"  cellSpacing="5">
                             
                                 <tr>
@@ -145,6 +157,10 @@ const PlayerInfo = () => {
     };      
     </div>
   )
+
+  
 }
+
+
 
 export default PlayerInfo
