@@ -1,12 +1,15 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import { PlayerData } from './service/PlayerData';
 import {DataTable} from 'primereact/datatable'
 import { Column } from 'primereact/column';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import {AiOutlineEdit} from 'react-icons/ai'
+import "./App.css"
 
 const PlayersList = () => {
-
+   const naviagate = useNavigate()
+//    const [products, setProducts] = useState([]);
+    const [selectedProduct, setSelectedProduct] = useState(null);
     // const columns = [
     //     { field: 'Id', header: 'ID' },
     //     { field: 'Player_Name', header: 'Player Name' },
@@ -20,14 +23,14 @@ const PlayersList = () => {
         
     // ];
 
-    const editButtonTemplate = (rowData) =>{
-        const playersDetailsPath = `/player-details/${rowData.Id}`
-        return(
-            <NavLink to={playersDetailsPath}>
-                <AiOutlineEdit className='icon'/>
-            </NavLink>
-        )
-    }
+    // const editButtonTemplate = (rowData) =>{
+    //     const playersDetailsPath = `/player-details/${rowData.Id}`
+    //     return(
+    //         <NavLink to={playersDetailsPath}>
+    //             <AiOutlineEdit className='icon'/>
+    //         </NavLink>
+    //     )
+    // }
 
 
   return (
@@ -41,14 +44,13 @@ const PlayersList = () => {
         rowsPerPageOptions={[5,10,15,20,25]}
         className='datatable'
         editMode='row'
-       dataKey='id'
+        dataKey='id'
+        selection={selectedProduct} onSelectionChange={(e) => setSelectedProduct(e.value)} 
+        onRowClick={(event)=>{
+         naviagate(`/player-details/${event.data.Id}`)
+       }}
         >
-            {/* {
-                columns.map((col, index) => (
-                    <Column key={col.field} field={col.field} header={col.header} sortable />
-                
-                ))
-            } */}
+            
             <Column field='Id' header='ID' />
             <Column field='Player_Name' header='Player Name' />
             <Column field='Mobile_Number' header='Mobile Number' />
@@ -56,10 +58,16 @@ const PlayersList = () => {
             <Column field='NPL1_NPL2' header='NPL1 / NPL2' />
             <Column field='Age' header='Age' />
             <Column field='Email_Id' header='Email-ID' />
-            <Column field='Gender' header='Gen
-            der' />
-            <Column field='Cricket_Type' header='Playing Type' />
-            <Column body={editButtonTemplate} headerStyle={{width:'10%',minWidth:'10rem'}} bodyStyle={{ textAlign: 'center' }}></Column>
+            <Column field='Gender' header='Gender' />
+            <Column field='Cricket_Type' header='Playing Type'  />
+            <Column body={(rowData)=>{
+             return(
+                
+                    rowData.status ? <p>rowData.status</p>  : <p>Not Sold</p>
+                
+             )
+            }} header='Status'  />
+            {/* <Column body={editButtonTemplate} headerStyle={{width:'10%',minWidth:'10rem'}} bodyStyle={{ textAlign: 'center' }}></Column> */}
         </DataTable>
       
     </div>
