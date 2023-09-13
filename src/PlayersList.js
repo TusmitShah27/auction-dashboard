@@ -2,36 +2,12 @@ import React ,{useState} from 'react'
 import { PlayerData } from './service/PlayerData';
 import {DataTable} from 'primereact/datatable'
 import { Column } from 'primereact/column';
-import { NavLink, useNavigate } from 'react-router-dom';
-import {AiOutlineEdit} from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom';
 import "./App.css"
 
 const PlayersList = () => {
    const naviagate = useNavigate()
-//    const [products, setProducts] = useState([]);
     const [selectedProduct, setSelectedProduct] = useState(null);
-    // const columns = [
-    //     { field: 'Id', header: 'ID' },
-    //     { field: 'Player_Name', header: 'Player Name' },
-    //     { field: 'Mobile_Number', header: 'Mobile Number' },
-    //     { field: 'Location', header: 'Location' },
-    //     { field: 'NPL1_NPL2', header: 'NPL1 / NPL2' },
-    //     { field: 'Cricket_Type', header: 'Playing Type' },
-    //     { field: 'Age', header: 'Age' },
-    //     { field: 'Gender', header: 'Gender' },
-    //     { field: 'Email_Id', header: 'Email-ID' },
-        
-    // ];
-
-    // const editButtonTemplate = (rowData) =>{
-    //     const playersDetailsPath = `/player-details/${rowData.Id}`
-    //     return(
-    //         <NavLink to={playersDetailsPath}>
-    //             <AiOutlineEdit className='icon'/>
-    //         </NavLink>
-    //     )
-    // }
-
 
   return (
     <div className="card" style={{margin:'2%'}} >  

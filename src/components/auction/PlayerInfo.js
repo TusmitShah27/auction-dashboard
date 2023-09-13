@@ -4,27 +4,25 @@ import Select from 'react-select';
 import { useParams } from 'react-router-dom';
 import { PlayerData } from '../../service/PlayerData';
 
+
+
 const PlayerInfo = () => {
 
+    // Player Details Fetched from the Json File Player Data --------------------
+
     const [playerDetails, setPlayerDetails] = useState([]);
-
     const { id } = useParams(); // Get the 'id' parameter from the URL as a string
-
     // Check if id is a valid integer
     const idAsInt = /^\d+$/.test(id) ? parseInt(id, 10) : null;
-    
     if (idAsInt !== null) {
       // Conversion was successful, idAsInt now holds the integer value
-      console.log("Count ->",idAsInt);
-     
+      console.log("Count ->",idAsInt); 
     } else {
       // Handle the case where 'id' is not a valid integer
       console.error("Invalid 'id' parameter");
     }
-
     useEffect(()=>{
     const data = PlayerData.getData()
-
     if (Array.isArray(data)) {
     // Check if data is an array
         if (data[idAsInt - 1]) {
@@ -41,37 +39,50 @@ const PlayerInfo = () => {
     }
 
     },[]);
+
+    // ---------------------xxxxxxxxxxx---------------------------------------
     
 
-    const options = [
-        {
-            label:"Team 1",
-            value:"team-1"
-        },
-        {
-            label:"Team 2",
-            value:"team-2"
-        },
-        {
-            label:"Team 3",
-            value:"team-3"
-        },
-        
-    ];
-
-    const [value, setValue] = useState("");
-
-    const [amount, setAmount] = useState("")
-
-    const handleAmount = (text) =>{
-        console.log("Amount", text);
-        setAmount(text.target.value);
-    }
-
+    // Teams Select and Storing in the Teams Array
+    const [value, setValue] = useState(null);
     const handleChange = (event) =>{
         console.log("Value",event)
         setValue(event)         
-    }
+    };
+
+    const [amount, setAmount] = useState(0);
+    const handleAmount = (event) => {
+        const text = event.target.value; // Extract the input value from the event
+        console.log("Amount", text);
+        setAmount(text);
+      };
+      
+
+    const [teams, setTeams] = useState([
+        {label:'Team 1',players:[], status:'Open'},
+        {label:'Team 2',players:[], status:'Open'},
+    ]);
+
+    const addPlayerToTeam = (teamName, playerName, amount) => {
+        console.log("Check",teamName,playerName,amount)
+        const updatedTeams = teams.map((team) => (
+            team.label === teamName
+            ? 
+            {
+                label:team.label,
+                players: [...team.players, { playerName, amount }],
+                status: 'Updated',
+             }
+            : 
+            team
+        ));
+        console.log("Player Details",updatedTeams)
+        setTeams(updatedTeams);
+        console.log("Set Team",teams);
+      };
+
+    // -------------xxxxxxxx--------xxxxxxxxx-----------------
+  
 
     function extractDriveFileId(url) {
         const idMatch = url.match(/id=([^&]+)/);
@@ -91,7 +102,7 @@ const PlayerInfo = () => {
                 player.Photo && ( 
                 <img 
                 src={`https://drive.google.com/uc?export=view&id=${extractDriveFileId(player.Photo)}`}
-                alt='drive image'
+                alt='Drive Uploaded Pic'
                 />   
          )}
             
@@ -134,23 +145,33 @@ const PlayerInfo = () => {
                     <div className='teamSelect'>
                     
                         <Select
-                            options={options}
+                            options={ teams.map((team) => ({value:team.label,label:team.label}))}
                             onChange={handleChange}
                             value={value}
                             placeholder="Select Team"
                             className='teamSelect-options'
                          />
 
-                        <input type='number' name='price' placeholder='Enter Amount' onChange={(text) => handleAmount(text)}/>  
+                        <input type='number' name='price' placeholder='Enter Amount' onChange={(text) => handleAmount(text)} value={amount}/>  
                         
                     </div>
-                    <button className='btn'>
-                    Sold
+                    <button className='btn' onClick={() => {
+                        if(value){
+                            console.log("Before adding player:", teams);
+                            addPlayerToTeam(value.label, player.Player_Name, amount);
+                            console.log("After adding player:", teams);
+                        }
+                        else{
+                            alert("Please Select a team");
+                            console.log("Please Select a team");
+                        }     
+                    }}>
+                        Sold
                     </button>
+                    
 
             </div>
-
-          
+   
        </div>
 
     ))
