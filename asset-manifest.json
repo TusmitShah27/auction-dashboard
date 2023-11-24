@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/auction-dashboard/static/css/main.dde56f3a.css",
+    "main.js": "/auction-dashboard/static/js/main.5f1b4047.js",
+    "static/js/787.152b67fc.chunk.js": "/auction-dashboard/static/js/787.152b67fc.chunk.js",
+    "static/media/color.png": "/auction-dashboard/static/media/color.6441e63a57ccc5105bad.png",
+    "index.html": "/auction-dashboard/index.html",
+    "main.dde56f3a.css.map": "/auction-dashboard/static/css/main.dde56f3a.css.map",
+    "main.5f1b4047.js.map": "/auction-dashboard/static/js/main.5f1b4047.js.map",
+    "787.152b67fc.chunk.js.map": "/auction-dashboard/static/js/787.152b67fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dde56f3a.css",
+    "static/js/main.5f1b4047.js"
+  ]
+}
