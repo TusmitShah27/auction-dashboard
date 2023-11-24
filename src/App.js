@@ -41,11 +41,11 @@ const theme = {
     <GlobalStyle />
     <Header />
         <Routes>
-                <Route path='/' element={<MaleAuction />}/>
-                <Route path='/auction/male' element={<MaleAuction />} />
-                <Route path='/auction/female' element={<FemaleAuction />} />
-                <Route path='/player-details/:id' element= {<PlayerInfo />}/>
-                <Route path='/player-details/female/:id' element={<PlayerInfoFemale/>}/>
+                <Route path='/auction-dashboard/' element={<MaleAuction />}/>
+                <Route path='/auction-dashboard/auction/male' element={<MaleAuction />} />
+                <Route path='/auction-dashboard/auction/female' element={<FemaleAuction />} />
+                <Route path='/auction-dashboard/player-details/:id' element= {<PlayerInfo />}/>
+                <Route path='/auction-dashboard/player-details/female/:id' element={<PlayerInfoFemale/>}/>
         </Routes>
     </Router>
     </ThemeProvider>

@@ -2,13 +2,14 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { styled } from 'styled-components';
 import Navbar from './Navbar';
+import Logo from '../images/logo.jpeg'
 
 const Header = () => {
   return (
    <MainHeader>
             <div className='header'>
-                <NavLink to="/">
-                    <img src='/images/logo.jpeg' alt='My Logo' width="55px" height="60px" className='logo'/>    
+                <NavLink to="/auction-dashboard/">
+                    <img src={Logo} alt='My Logo' width="55px" height="60px" className='logo'/>    
                 </NavLink>
                 <h2>Nagda Premier League - 3.0</h2>
             </div>

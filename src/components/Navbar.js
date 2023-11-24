@@ -22,13 +22,13 @@ const Navbar = () => {
                 </li> */}
 
                 <li>
-                    <NavLink to='/auction/male' className="navbar-link home-link">
+                    <NavLink to='/auction-dashboard/auction/male' className="navbar-link home-link">
                       Male
                     </NavLink>
                 </li>
 
                 <li>
-                    <NavLink to='/auction/female' className="navbar-link home-link">
+                    <NavLink to='/auction-dashboard/auction/female' className="navbar-link home-link">
                       Female
                     </NavLink>
                 </li>

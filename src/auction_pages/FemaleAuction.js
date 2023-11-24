@@ -23,7 +23,7 @@ const FemaleAuction = () => {
         dataKey='id'
         selection={selectedProduct} onSelectionChange={(e) => setSelectedProduct(e.value)} 
         onRowClick={(event)=>{
-         naviagate(`/player-details/female/${event.data.Id}`)
+         naviagate(`/auction-dashboard/player-details/female/${event.data.Id}`)
        }}
         >
             <Column field='Id' header='ID' />
