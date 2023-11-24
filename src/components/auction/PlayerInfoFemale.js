@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './playerInfo.css'
-import Select from 'react-select';
+// import Select from 'react-select';
 import { useParams } from 'react-router-dom';
-// import { PlayerData } from '../../service/PlayerData';
-import { MaleData } from '../../service/MaleData';
+import { PlayerData } from '../../service/PlayerData';
+// import { MaleData } from '../../service/MaleData';
 
 
 
-const PlayerInfo = () => {
+const PlayerInfoFemale = () => {
 
     // Player Details Fetched from the Json File Player Data --------------------
 
@@ -25,8 +25,8 @@ const PlayerInfo = () => {
 
     
     useEffect(()=>{
-    // const data = PlayerData.getMaleData()
-    const data = MaleData.getMaleData()
+    const data = PlayerData.getData()
+    // const data = MaleData.getMaleData()
     if (Array.isArray(data)) {
     // Check if data is an array
         if (data[idAsInt - 1]) {
@@ -48,42 +48,42 @@ const PlayerInfo = () => {
     
 
     // Teams Select and Storing in the Teams Array
-    const [value, setValue] = useState(null);
-    const handleChange = (event) =>{
-        console.log("Value",event)
-        setValue(event)         
-    };
+    // const [value, setValue] = useState(null);
+    // const handleChange = (event) =>{
+    //     console.log("Value",event)
+    //     setValue(event)         
+    // };
 
-    const [amount, setAmount] = useState(0);
-    const handleAmount = (event) => {
-        const text = event.target.value; // Extract the input value from the event
-        console.log("Amount", text);
-        setAmount(text);
-      };
+    // const [amount, setAmount] = useState(0);
+    // const handleAmount = (event) => {
+    //     const text = event.target.value; // Extract the input value from the event
+    //     console.log("Amount", text);
+    //     setAmount(text);
+    //   };
       
 
-    const [teams, setTeams] = useState([
-        {label:'Team 1',players:[], status:'Open'},
-        {label:'Team 2',players:[], status:'Open'},
-    ]);
+    // const [teams, setTeams] = useState([
+    //     {label:'Team 1',players:[], status:'Open'},
+    //     {label:'Team 2',players:[], status:'Open'},
+    // ]);
 
-    const addPlayerToTeam = (teamName, playerName, amount) => {
-        console.log("Check",teamName,playerName,amount)
-        const updatedTeams = teams.map((team) => (
-            team.label === teamName
-            ? 
-            {
-                label:team.label,
-                players: [...team.players, { playerName, amount }],
-                status: 'Updated',
-             }
-            : 
-            team
-        ));
-        console.log("Player Details",updatedTeams)
-        setTeams(updatedTeams);
-        console.log("Set Team",teams);
-      };
+    // const addPlayerToTeam = (teamName, playerName, amount) => {
+    //     console.log("Check",teamName,playerName,amount)
+    //     const updatedTeams = teams.map((team) => (
+    //         team.label === teamName
+    //         ? 
+    //         {
+    //             label:team.label,
+    //             players: [...team.players, { playerName, amount }],
+    //             status: 'Updated',
+    //          }
+    //         : 
+    //         team
+    //     ));
+    //     console.log("Player Details",updatedTeams)
+    //     setTeams(updatedTeams);
+    //     console.log("Set Team",teams);
+    //   };
 
     // -------------xxxxxxxx--------xxxxxxxxx-----------------
   
@@ -114,8 +114,7 @@ const PlayerInfo = () => {
             <div className='playerInformation'>
                     <h2>Player Information</h2>
                     <div className='playerInformation-display'>
-                   
-        
+            
                         <table align='center' border="2px" width="100%"  cellSpacing="5">
                             
                                 <tr>
@@ -146,7 +145,7 @@ const PlayerInfo = () => {
                         
                  </div>
 
-                    <div className='teamSelect'>
+                    {/* <div className='teamSelect'>
                     
                         <Select
                             options={ teams.map((team) => ({value:team.label,label:team.label}))}
@@ -171,7 +170,7 @@ const PlayerInfo = () => {
                         }     
                     }}>
                         Sold
-                    </button>
+                    </button> */}
                     
 
             </div>
@@ -188,4 +187,4 @@ const PlayerInfo = () => {
 
 
 
-export default PlayerInfo
+export default PlayerInfoFemale

@@ -1,83 +1,101 @@
-.listWrap{
+.listWrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     max-width: 100%;
     max-height: 90%;
-
+    margin: 0 auto; /* Center the listWrap horizontally */
 }
-.listWrap .playerImage{
+
+.listWrap .playerImage {
     width: 100%;
     height: 100%;
     display: grid;
     place-items: center;
     cursor: pointer;
 }
-.listWrap .playerImage img{
+
+.listWrap .playerImage img {
     width: 62%;
     height: auto;
 }
 
-.listWrap .playerInformation{
+.listWrap .playerInformation {
     width: 100%;
-   text-align:center;
-   padding: 2% 0 0 0;
-    
+    text-align: center;
+    padding: 2% 0 0 0;
 }
 
-.listWrap .playerInformation h2{
+.listWrap .playerInformation h2 {
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
-    
 }
 
-.playerInformation .playerInformation-display{
+.playerInformation .playerInformation-display {
     margin-top: 3%;
     padding: 0 9% 0 0;
-}  
+}
 
-
-
-.playerInformation .playerInformation-display table{
-    border-color:slategrey;
+.playerInformation .playerInformation-display table {
+    border-color: slategrey;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.playerInformation .playerInformation-display table tr td{
+.playerInformation .playerInformation-display table tr td {
     padding: 3% 0 3% 0;
     font-size: medium;
     font-weight: 600;
+    border: 2px solid black;
 }
 
-.listWrap .playerInformation .teamSelect{
+.listWrap .playerInformation .teamSelect {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 2% 0 0 0;
     max-width: 90%;
-    margin-top: 2%;  
+    margin-top: 2%;
 }
 
-.listWrap .playerInformation .teamSelect .teamSelect-options{
-     width:30rem;
-     font-size: 16px;
-     font-weight: 400;    
- }
+.listWrap .playerInformation .teamSelect .teamSelect-options {
+    width: 30rem;
+    font-size: 16px;
+    font-weight: 400;
+}
 
- .listWrap .playerInformation .btn{
+.listWrap .playerInformation .btn {
     display: flex;
     width: 90%;
     background-color: red;
     border-radius: 4px;
-    border-color:white;
+    border-color: white;
     color: white;
     font-weight: 500;
     align-items: center;
     justify-content: center;
     margin-top: 4%;
     padding: 1% 0 1% 0;
+}
 
- }
 
+@media only screen and (max-width: 768px) {
+    .listWrap {
+        grid-template-columns: 1fr; /* Display as a single column on smaller screens */
+        align-items: center; /* Center the listWrap vertically */
+    }
 
+    .listWrap .playerInformation .teamSelect .teamSelect-options {
+        width: 100%; /* Make the teamSelect options full width */
+    }
+
+    /* Center-align the table within the playerInformation-display container */
+    .playerInformation .playerInformation-display {
+        text-align: center;
+        padding: 0; /* Adjust padding as needed */
+    }
+
+    .playerInformation .playerInformation-display table {
+        margin: 0 auto; /* Center-align the table horizontally */
+    }
+}

@@ -1,11 +1,13 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import Home from './Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Auction from './Auction';
+// import Auction from './Auction';
 import Header from './components/Header';
 import { GlobalStyle } from './GlobalStyle';
 import PlayerInfo from './components/auction/PlayerInfo';
+import MaleAuction from './auction_pages/MaleAuction';
+import FemaleAuction from './auction_pages/FemaleAuction';
+import PlayerInfoFemale from './components/auction/PlayerInfoFemale';
 
 function App() {
 const theme = {
@@ -39,9 +41,11 @@ const theme = {
     <GlobalStyle />
     <Header />
         <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path='/auction' element={<Auction />}/>
-            <Route path='/player-details/:id' element= {<PlayerInfo />}/>
+                <Route path='/' element={<MaleAuction />}/>
+                <Route path='/auction/male' element={<MaleAuction />} />
+                <Route path='/auction/female' element={<FemaleAuction />} />
+                <Route path='/player-details/:id' element= {<PlayerInfo />}/>
+                <Route path='/player-details/female/:id' element={<PlayerInfoFemale/>}/>
         </Routes>
     </Router>
     </ThemeProvider>

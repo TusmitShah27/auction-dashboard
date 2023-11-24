@@ -8,7 +8,7 @@ const Header = () => {
    <MainHeader>
             <div className='header'>
                 <NavLink to="/">
-                    <img src='./images/logo.jpeg' alt='My Logo' width="55px" height="60px" className='logo'/>    
+                    <img src='/images/logo.jpeg' alt='My Logo' width="55px" height="60px" className='logo'/>    
                 </NavLink>
                 <h2>Nagda Premier League - 3.0</h2>
             </div>
@@ -37,6 +37,30 @@ position: relative;
 }
 .logo{
     height:5rem;
+}
+
+@media(max-width: 767px){
+        padding:0;
+        margin-left:8px;
+        .header img{
+            width: 58px;
+            height: 60px;
+        }
+        .header h2{
+            font-size: 12px;
+        }
+}
+
+@media(max-width: 400px){
+        padding:0;
+        margin-left:8px;
+        .header img{
+            width: 58px;
+            height: 60px;
+        }
+        .header h2{
+            font-size: 12px;
+        }
 }
 
 

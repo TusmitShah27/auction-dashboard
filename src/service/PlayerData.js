@@ -1,3 +1,4 @@
+  
   export const PlayerData = {
        getData : function () {
         return [
@@ -13,7 +14,7 @@
               "Age": 20,
               "Gender": "Female",
               "Payment_SS": "https://drive.google.com/open?id=1yE0N8oJ9pelbliArALdkl1qVPAzykuzv",
-              "Photo": "https://drive.google.com/open?id=1W_-qAVxM97mLs4Xn2b8apRsKlPX_Nr42",
+              "Photo": "https://drive.google.com/open?id=1q2pR6UTgOsRYwA4hXdpwF7cWnp7Oh4KH",
               "Email_Id": "nagda.palak@gmail.com",
               "": "",
               "__1": ""
@@ -324,7 +325,7 @@
               "": "",
               "__1": ""
             }
-    ];
+        ];
        }
         
     }

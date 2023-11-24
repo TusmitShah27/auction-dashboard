@@ -1,14 +1,19 @@
 import React from 'react'
 import './auction.css'
-import PlayersList from './PlayersList'
+import { Link } from 'react-router-dom'
 
 const Auction = () => {
 
   return (
     <div className='container'>
-        <PlayersList />
-        
+    <div className='dropdown'>
+      <button className='dropbtn'>Auction</button>
+      <div className='dropdown-content'>
+        <Link to='/auction/male'>Male</Link>
+        <Link to='/auction/female'>Female</Link>
+      </div>
     </div>
+  </div>
   )
 }
 

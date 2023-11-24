@@ -1,11 +1,11 @@
 import React ,{useState} from 'react'
-import { PlayerData } from './service/PlayerData';
 import {DataTable} from 'primereact/datatable'
 import { Column } from 'primereact/column';
 import { useNavigate } from 'react-router-dom';
-import "./App.css"
+import "../App.css"
+import { PlayerData } from '../service/PlayerData';
 
-const PlayersList = () => {
+const FemaleAuction = () => {
    const naviagate = useNavigate()
     const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -23,10 +23,9 @@ const PlayersList = () => {
         dataKey='id'
         selection={selectedProduct} onSelectionChange={(e) => setSelectedProduct(e.value)} 
         onRowClick={(event)=>{
-         naviagate(`/player-details/${event.data.Id}`)
+         naviagate(`/player-details/female/${event.data.Id}`)
        }}
         >
-            
             <Column field='Id' header='ID' />
             <Column field='Player_Name' header='Player Name' />
             <Column field='Mobile_Number' header='Mobile Number' />
@@ -50,4 +49,4 @@ const PlayersList = () => {
   )
 }
 
-export default PlayersList
+export default FemaleAuction

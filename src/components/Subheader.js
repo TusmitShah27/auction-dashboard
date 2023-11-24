@@ -22,6 +22,18 @@ const Header = styled.header`
     font-weight:500;
 }
 
+@media(max-width:767px){
+  .sub-header h2{
+    font-size:22px;
+  }
+}
+
+  @media(max-width:400px){
+  .sub-header h2{
+    font-size:22px;
+  }
+}
+
 
 `;
 
