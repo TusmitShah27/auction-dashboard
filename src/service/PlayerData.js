@@ -14,41 +14,11 @@
             "Age": 20,
             "Gender": "Female",
             "Payment_SS": "https://drive.google.com/open?id=1yE0N8oJ9pelbliArALdkl1qVPAzykuzv",
-            "Photo": "https://drive.google.com/open?id=1W_-qAVxM97mLs4Xn2b8apRsKlPX_Nr42",
+            "Photo": "https://drive.google.com/open?id=1q2pR6UTgOsRYwA4hXdpwF7cWnp7Oh4KH",
             "Email_Id": "nagda.palak@gmail.com"
           },
           {
             "Id": 2,
-            "Player_Name": "Tina Mahesh Nagda",
-            "Mobile_Number": 7738001110,
-            "Location": "Mulund",
-            "Village": "Kotadi Mahadevpuri",
-            "NPL1_NPL2": "NPL-2",
-            "Cricket_Type": "Allrounder",
-            "TShirt_Size": "M",
-            "Age": 43,
-            "Gender": "Female",
-            "Payment_SS": "https://drive.google.com/open?id=1H7emhHE_DofMh6A3sUYCiYEV8EyVlmzp",
-            "Photo": "https://drive.google.com/open?id=1vx8rjDRtg0uHUS9kr_JInXD3jxcTQKDM",
-            "Email_Id": "Nagda.tina@gmail.com"
-          },
-          {
-            "Id": 3,
-            "Player_Name": "Nirali Nirav Rambhia - Nagda",
-            "Mobile_Number": 8169796917,
-            "Location": "Dombivali",
-            "Village": "Nana bhadiya",
-            "NPL1_NPL2": "None",
-            "Cricket_Type": "Batting",
-            "TShirt_Size": "S",
-            "Age": 27,
-            "Gender": "Niyani",
-            "Payment_SS": "https://drive.google.com/open?id=1sOQWCoJxtvl_fAVrnRT8R3_v3T-VDwaX",
-            "Photo": "https://drive.google.com/open?id=15fSVBsTdjhzOSTF6i1reXW6CuMRhCuaF",
-            "Email_Id": "nirushah96@gmail.com"
-          },
-          {
-            "Id": 4,
             "Player_Name": "Nidhi Vaibhav Nagda",
             "Mobile_Number": 9820008246,
             "Location": "Bhandup",
@@ -63,7 +33,7 @@
             "Email_Id": "marunidhi25@gmail.com"
           },
           {
-            "Id": 5,
+            "Id": 3,
             "Player_Name": "Priyanka Chirag sangoi",
             "Mobile_Number": 7066845446,
             "Location": "Ambarnath",
@@ -78,37 +48,7 @@
             "Email_Id": "Priyanka.sangoi@gmail.com"
           },
           {
-            "Id": 6,
-            "Player_Name": "Harsha Mukesh Dedhia",
-            "Mobile_Number": 8108391887,
-            "Location": "Mulund west",
-            "Village": "Nagalpur",
-            "NPL1_NPL2": "NPL-2",
-            "Cricket_Type": "Allrounder",
-            "TShirt_Size": "XL",
-            "Age": 54,
-            "Gender": "Female",
-            "Payment_SS": "https://drive.google.com/open?id=1Gf_8cEUJbv9xXesNGoulxJbS4ELN2nsP",
-            "Photo": "https://drive.google.com/open?id=162OBHwIqJ__KTsgZ2OG-24umGqEejOJz",
-            "Email_Id": "jaydedhia422@gmail.com"
-          },
-          {
-            "Id": 7,
-            "Player_Name": "Avani Samir Nagda",
-            "Mobile_Number": 7977290668,
-            "Location": "Mulund",
-            "Village": "Bhojay",
-            "NPL1_NPL2": "Both",
-            "Cricket_Type": "Bowling",
-            "TShirt_Size": "XXL",
-            "Age": 35,
-            "Gender": "Female",
-            "Payment_SS": "https://drive.google.com/open?id=17lgGY_VfJbUD0GKwibU9b0TFXAE3vYpb",
-            "Photo": "https://drive.google.com/open?id=1g3v6OVYQUmNElEU3AuNgbcDA5Tbeg9Uq",
-            "Email_Id": "avaninagda365@gmail.com"
-          },
-          {
-            "Id": 8,
+            "Id": 4,
             "Player_Name": "Tina Kamlesh Rambhia",
             "Mobile_Number": 9769454691,
             "Location": "Mulund",
@@ -123,7 +63,7 @@
             "Email_Id": "tinarambhia28@gmail.com"
           },
           {
-            "Id": 9,
+            "Id": 5,
             "Player_Name": "Jinal Bhavesh Nagda",
             "Mobile_Number": 9987407527,
             "Location": "Vashi (Navi Mumbai)",
@@ -138,7 +78,7 @@
             "Email_Id": "jinalbnagda@gmail.com"
           },
           {
-            "Id": 10,
+            "Id": 6,
             "Player_Name": "Mayuri Hitendra Nagda",
             "Mobile_Number": 9819455775,
             "Location": "Dombivli",
@@ -153,7 +93,7 @@
             "Email_Id": "mayurinagada11@gmail.com"
           },
           {
-            "Id": 11,
+            "Id": 7,
             "Player_Name": "Pooja Hardik Nagda",
             "Mobile_Number": 8080903513,
             "Location": "Mulund",
@@ -168,7 +108,7 @@
             "Email_Id": "pspooja751@gmail.com"
           },
           {
-            "Id": 12,
+            "Id": 8,
             "Player_Name": "Chandrika Harakchand Nagda",
             "Mobile_Number": 9821189801,
             "Location": "Mulund",
@@ -183,7 +123,7 @@
             "Email_Id": "nchand1971@gmail.com"
           },
           {
-            "Id": 13,
+            "Id": 9,
             "Player_Name": "Nandita Mehul Shah/Nagda",
             "Mobile_Number": 9920896533,
             "Location": "Mulund",
@@ -198,52 +138,7 @@
             "Email_Id": "nanditams@gmail.com"
           },
           {
-            "Id": 14,
-            "Player_Name": "Geeta Bhavesh Nagda",
-            "Mobile_Number": 9152585975,
-            "Location": "Mulund east",
-            "Village": "Sanosara",
-            "NPL1_NPL2": "NPL-1",
-            "Cricket_Type": "Allrounder",
-            "TShirt_Size": "S",
-            "Age": 50,
-            "Gender": "Female",
-            "Payment_SS": "https://drive.google.com/open?id=1yXLfkVZB1GgqCcujBPTkmDs7jfrSfvN6",
-            "Photo": "https://drive.google.com/open?id=1tCglrX74KaffxBat_V-qCR_gZqztd7Ib",
-            "Email_Id": "geetabnagda43@gmail.com"
-          },
-          {
-            "Id": 15,
-            "Player_Name": "Ami bhavin nagda",
-            "Mobile_Number": 9930411453,
-            "Location": "Bhayandar",
-            "Village": "Moti undoth",
-            "NPL1_NPL2": "NPL-2",
-            "Cricket_Type": "Bowling",
-            "TShirt_Size": "Xxl",
-            "Age": 37,
-            "Gender": "Female",
-            "Payment_SS": "https://drive.google.com/open?id=1xUUWg7ZjJUbglxMDyFnkBdea97UbUEQf",
-            "Photo": "https://drive.google.com/open?id=1CceunkxHJ5KcpQjj_xeZkKtqo3Mtc4iR",
-            "Email_Id": "amidedhia99@gmail.com"
-          },
-          {
-            "Id": 16,
-            "Player_Name": "Bhoomee Chandresh Nagda",
-            "Mobile_Number": 8356872378,
-            "Location": "Bhandup",
-            "Village": "MOTI UNODTH",
-            "NPL1_NPL2": "NPL-2",
-            "Cricket_Type": "Allrounder",
-            "TShirt_Size": "4XL",
-            "Age": 16,
-            "Gender": "Female",
-            "Payment_SS": "https://drive.google.com/open?id=12rdkE2H7UgVSeN272yKJTINWfRUWwu-P",
-            "Photo": "https://drive.google.com/open?id=1FzzVbQ7J_IrX3F5u1wUegtqIOR8LM6AW",
-            "Email_Id": "phgala02@gmail.com"
-          },
-          {
-            "Id": 17,
+            "Id": 10,
             "Player_Name": "Kashmira Chandresh Nagda",
             "Mobile_Number": 9167534774,
             "Location": "Bhandup",
@@ -258,22 +153,7 @@
             "Email_Id": "phgala03@gmail.com"
           },
           {
-            "Id": 18,
-            "Player_Name": "Ishita Rupesh Nagda",
-            "Mobile_Number": 9892101963,
-            "Location": "Goregaon",
-            "Village": "Sanosara",
-            "NPL1_NPL2": "NPL-2",
-            "Cricket_Type": "Allrounder",
-            "TShirt_Size": "S",
-            "Age": 20,
-            "Gender": "Niyani",
-            "Payment_SS": "https://drive.google.com/open?id=1JhXZPWdb2Trh0mwOQJ6NrGFhPI5v6dKm",
-            "Photo": "https://drive.google.com/open?id=1HIjvMW_semZtx27G8UtWaXfe9dxbGoZr",
-            "Email_Id": "ishitanagda25@gmail.com"
-          },
-          {
-            "Id": 19,
+            "Id": 11,
             "Player_Name": "Daksha Jitendra Shah/Nagda",
             "Mobile_Number": 9820557716,
             "Location": "Santacruz",
@@ -288,7 +168,7 @@
             "Email_Id": "alpsbeautycare@gmail.com"
           },
           {
-            "Id": 20,
+            "Id": 12,
             "Player_Name": "Jayshree kalpesh Nagda",
             "Mobile_Number": 9619016426,
             "Location": "Thane",
@@ -303,7 +183,7 @@
             "Email_Id": "jevdshah@gmail.com"
           },
           {
-            "Id": 21,
+            "Id": 13,
             "Player_Name": "Shraddha Rupesh Nagda",
             "Mobile_Number": 7208071172,
             "Location": "Bhayandar",
@@ -318,22 +198,7 @@
             "Email_Id": "shraddha.nagda@gmail.com"
           },
           {
-            "Id": 22,
-            "Player_Name": "Akshata sagar gala",
-            "Mobile_Number": 9820836260,
-            "Location": "Mulund",
-            "Village": "Bhojay",
-            "NPL1_NPL2": "NPL-2",
-            "Cricket_Type": "Allrounder",
-            "TShirt_Size": "3xl",
-            "Age": 31,
-            "Gender": "Female",
-            "Payment_SS": "https://drive.google.com/open?id=1n_2uDyyIsBB1W9zz3RvMvQ1Rg6V-EpTl",
-            "Photo": "https://drive.google.com/open?id=1EBH6KyOkKRM9tHQl83CS5NRXB0XQfqFG",
-            "Email_Id": "Nagdaakshata@gmail.com"
-          },
-          {
-            "Id": 23,
+            "Id": 14,
             "Player_Name": "Vaishali Deepak Pasad",
             "Mobile_Number": 9619703328,
             "Location": "Mulund Checknaka west",
@@ -348,22 +213,7 @@
             "Email_Id": "Vaishalipasad2310@gmail.co"
           },
           {
-            "Id": 24,
-            "Player_Name": "Jiya rupesh nagda",
-            "Mobile_Number": 9821483687,
-            "Location": "Bhayandar",
-            "Village": "Naredi",
-            "NPL1_NPL2": "Both",
-            "Cricket_Type": "Allrounder",
-            "TShirt_Size": "M",
-            "Age": 16,
-            "Gender": "Female",
-            "Payment_SS": "https://drive.google.com/open?id=18ZrgMG6X6qmuMumyJh4VQJeU1THqLZMQ",
-            "Photo": "https://drive.google.com/open?id=1Na8MUy0AEvAg6DjL89pso1lM6vYkbflh",
-            "Email_Id": "Vdedhia38@gmail.com"
-          },
-          {
-            "Id": 25,
+            "Id": 15,
             "Player_Name": "Bhumi Paresh Nagda",
             "Mobile_Number": 7385520946,
             "Location": "Dombivali East",
@@ -378,7 +228,7 @@
             "Email_Id": "bhuminagda2000@gmail.com"
           },
           {
-            "Id": 26,
+            "Id": 16,
             "Player_Name": "Chaitri Dhiraj Nagda",
             "Mobile_Number": 9324070874,
             "Location": "Malad",
@@ -393,7 +243,7 @@
             "Email_Id": "nagdachaitri@gmail.com"
           },
           {
-            "Id": 27,
+            "Id": 17,
             "Player_Name": "Sancheti Chintan Gosar",
             "Mobile_Number": 9870302259,
             "Location": "Vikhroli",
@@ -408,7 +258,7 @@
             "Email_Id": "Sanchetinagda07@gmail.com"
           },
           {
-            "Id": 28,
+            "Id": 18,
             "Player_Name": "Anjana Shantilal Gosar",
             "Mobile_Number": 9702342888,
             "Location": "Dombivli",
@@ -423,7 +273,7 @@
             "Email_Id": "gosardsg@yahoo.com"
           },
           {
-            "Id": 29,
+            "Id": 19,
             "Player_Name": "Kusum Bipin Nagda",
             "Mobile_Number": 8766865687,
             "Location": "Nallasopara",
@@ -438,7 +288,7 @@
             "Email_Id": "Baf.hbn@gmail.com"
           },
           {
-            "Id": 30,
+            "Id": 20,
             "Player_Name": "Krushi Ajay Nagda",
             "Mobile_Number": 8291618398,
             "Location": "Dombivli",
@@ -453,7 +303,7 @@
             "Email_Id": "Krushiajaynagda@gmail.com"
           },
           {
-            "Id": 31,
+            "Id": 21,
             "Player_Name": "Suchi Kunjesh Nagda",
             "Mobile_Number": 8082052764,
             "Location": "Mulund",
@@ -468,7 +318,7 @@
             "Email_Id": "suchinagda@gmail.com"
           },
           {
-            "Id": 32,
+            "Id": 22,
             "Player_Name": "Manali Satish Nagda",
             "Mobile_Number": 9158095380,
             "Location": "Vasai",
@@ -483,7 +333,7 @@
             "Email_Id": "nagda.manali@gmail.com"
           },
           {
-            "Id": 33,
+            "Id": 23,
             "Player_Name": "Krisha Bhavesh Nagda",
             "Mobile_Number": 9820799098,
             "Location": "Mulund",
@@ -498,7 +348,7 @@
             "Email_Id": "krishanagda01@gmail.com"
           },
           {
-            "Id": 34,
+            "Id": 24,
             "Player_Name": "Deepa Vikram Nagda",
             "Mobile_Number": 9619611996,
             "Location": "Chembur",
@@ -513,7 +363,7 @@
             "Email_Id": "tusmitshah@gmail.com"
           },
           {
-            "Id": 35,
+            "Id": 25,
             "Player_Name": "Sneha Shah",
             "Mobile_Number": "07738301381",
             "Location": "Mulund",
@@ -528,7 +378,7 @@
             "Email_Id": "nagda.sneha@gmail.com"
           },
           {
-            "Id": 36,
+            "Id": 26,
             "Player_Name": "Sejal Khushal Nagda",
             "Mobile_Number": 9821010109,
             "Location": "Dombivli",
@@ -543,22 +393,7 @@
             "Email_Id": "Sejalnagda100@gmail.com"
           },
           {
-            "Id": 37,
-            "Player_Name": "Vimi Shah",
-            "Mobile_Number": 9819885119,
-            "Location": "Mulund",
-            "Village": "Vidh",
-            "NPL1_NPL2": "Both",
-            "Cricket_Type": "Allrounder",
-            "TShirt_Size": "M",
-            "Age": 34,
-            "Gender": "Female",
-            "Payment_SS": "Vijay Paid",
-            "Photo": "https://drive.google.com/open?id=1qNDyEDvcqUCvNTfgnk8CVZre4Mjwh0Se",
-            "Email_Id": ""
-          },
-          {
-            "Id": 38,
+            "Id": 27,
             "Player_Name": "Laxmi Arvind vira",
             "Mobile_Number": 9821961335,
             "Location": "",
@@ -570,6 +405,21 @@
             "Gender": "Female",
             "Payment_SS": "Cash Denge",
             "Photo": "https://drive.google.com/open?id=13m_8AXwjOVwM4c42TEvzl4bR41EIabLH",
+            "Email_Id": ""
+          },
+          {
+            "Id": 28,
+            "Player_Name": "Bhavna Nagda",
+            "Mobile_Number": 9757376627,
+            "Location": "Bhandup",
+            "Village": "Unodth",
+            "NPL1_NPL2": "None",
+            "Cricket_Type": "Allrounder",
+            "TShirt_Size": "XL",
+            "Age": 40,
+            "Gender": "Female",
+            "Payment_SS": "Remaining",
+            "Photo": "https://drive.google.com/open?id=1BWJi60wCJqlWFprZTNYtCB4_PS412ZSC",
             "Email_Id": ""
           }
         ];

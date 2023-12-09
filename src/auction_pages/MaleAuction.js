@@ -22,7 +22,7 @@ const MaleAuction = () => {
             tableStyle={{maxWidth:'100%',fontSize:'16px', fontWeight:'500',width:'100%',alignSelf:'center'}} 
             showGridlines
             paginator
-            rows={10}
+            rows={20}
             rowsPerPageOptions={[5,10,15,20,25]}
             className='datatable'
             editMode='row'
